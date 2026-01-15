@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD231 | Homepage</title>
+    <meta name="description" content="Homepage for WDD231">
+    <meta name="author" content="Lluvia Josephine Nuño López">
+
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/homepage-large.css">
+
+    <script src="scripts/homepage.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <img src="images/house.svg" alt="home-icon" width="16" height="16">
+        <span>Lluvia Nuño</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <div>
+                <h2>About Me</h2>
+                <p>My name is Lluvia, which as a fun fact, means "rain" in spanish.
+                    I'm 17 years old and I'm from Coahuila, México. I'm currently studying
+                    Web Development at BYU-I Pathway. I enjoy learning new things a lot!
+                    With learning comes reading, which I also love to do in my free time,
+                    along with drawing and playing basketball.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Student Photo</h2>
+                <img src="images/selfie.jpg" alt="selfie-photo" width="200" height="300">
+            </div>
+        </section>
+
+        <section>
+            <div class="courses" id="courses">
+                <h2>Web Certificate Courses</h2>
+                <div class="course-list" id="course-list">
+                    <!-- Course items will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="https://github.com/lluvianuno" target="_blank"><img src="images/github.svg" alt="github-icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/lluvia-nuño-lópez" target="_blank"><img src="images/linkedin.svg" alt="linkedIn-icon" width="16" height="16"></a>
+            <a href="https://www.instagram.com/joeynn.__?igsh=MW03Y29hYmtnejJoMQ==" target="_blank"><img src="images/instagram.svg" alt="instagram-icon" width="16" height="16"></a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> | Lluvia Nuño | Coahuila, México</p>
+        <p id="lastModified"></p>
+    </footer>
     
 </body>
 </html>

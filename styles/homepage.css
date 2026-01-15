@@ -1,0 +1,121 @@
+:root {
+    --heading-font: 'Arapey', serif;
+    --body-font: 'Lato', sans-serif;
+    --primary-color: #8A3324;
+    --secondary-color: #f4efe3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2px;
+}
+
+header span {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: var(--secondary-color);
+}
+
+.navigation a:hover {
+    background-color: #a8a8a8;
+}
+
+h1 {
+    margin-left: 10px;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+section {
+    background-color: var(--secondary-color);
+    margin: 0 10px 1rem 10px;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+section p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    padding: 1rem 10px;
+    line-height: 1.5;
+}
+
+section img {
+    min-width: 200px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
