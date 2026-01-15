@@ -119,3 +119,31 @@ section img {
     margin: 0 auto;
     padding: 1rem;
 }
+
+/*------------------FOOTER------------------*/
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.icons a {
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid #ffffff;
+}
