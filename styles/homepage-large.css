@@ -1,8 +1,8 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
 
     header, main, nav, footer {
-        max-width: 900px;
         margin: 0 auto;
+        max-width: 900px;
     }
 
     header {
@@ -29,18 +29,12 @@
     /*---------MAIN CONTENT--------*/
 
     .card {
-        display: flex; /* Hace que las secciones se alineen horizontalmente */
-        gap: 20px; /* Espacio entre las secciones */
+        display: flex;
+        gap: 20px;
     }
-
-    .about-me, .student-photo {
-        flex: 2, 1; /* Ambas secciones ocupan el mismo espacio */
-    }
-
-    /* Opcional: ajustar el tamaño de las imágenes si es necesario */
-    .student-photo img {
-        width: 100%; /* Ocupando todo el espacio disponible */
-        height: auto; /* Manteniendo la proporción */
-        border-radius: 8px; /* Bordes redondeados */
+    
+    .card img {
+        width: 300px;
+        height: auto;
     }
 }

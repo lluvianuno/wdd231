@@ -41,7 +41,7 @@ header span {
     font-size: 2rem;
     color: #ffffff;
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--body-font);
 }
 
 .hamburger::after {
