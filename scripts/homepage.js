@@ -101,18 +101,19 @@ const cseButton = document.querySelector('#cse');
 
 allCoursesButton.addEventListener("click", () => {
     displayCourses(courses);
-})
+});
 
 wddButton.addEventListener("click", () => {
     const wddCourses = courses.filter(course => course.subject === "WDD");
     displayCourses(wddCourses);
-})
+});
 
 cseButton.addEventListener("click", () => {
     const cseCourses = courses.filter(course => course.subject === "CSE");
     displayCourses(cseCourses);
-})
+});
 
+// Mostrar todos al cargar
 displayCourses(courses);
 
 function displayCourses(filteredCourses) {
@@ -123,12 +124,16 @@ function displayCourses(filteredCourses) {
         const courseElement = document.createElement('div');
         courseElement.classList.add('course-card');
 
+        // Clase solo si está completado
         if (course.completed) {
             courseElement.classList.add('completed');
         }
 
         courseElement.innerHTML = `
-            <h3>${course.subject} ${course.number}</h3>`;
+            <h3 class="course-title">
+                ${course.subject} ${course.number}
+            </h3>
+        `;
 
         courseList.appendChild(courseElement);
     });

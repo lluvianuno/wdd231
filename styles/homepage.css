@@ -175,8 +175,13 @@ section img {
 
 .completed .course-title::after {
     content: " ✓";
-    color: #a8a8a8;
-    font-weight: bold;
+    margin-left: .5rem;
+    color: #000000;
+}
+
+.completed .course-title {
+    color: #000000;
+    background-color: #a8a8a8;
 }
 
 
@@ -214,3 +219,4 @@ section img {
 .icons a:hover {
     background-color: var(--secondary-color);
 }
+

@@ -25,4 +25,22 @@
     .navigation a {
         border: none;
     }
+
+    /*---------MAIN CONTENT--------*/
+
+    .card {
+        display: flex; /* Hace que las secciones se alineen horizontalmente */
+        gap: 20px; /* Espacio entre las secciones */
+    }
+
+    .about-me, .student-photo {
+        flex: 2, 1; /* Ambas secciones ocupan el mismo espacio */
+    }
+
+    /* Opcional: ajustar el tamaño de las imágenes si es necesario */
+    .student-photo img {
+        width: 100%; /* Ocupando todo el espacio disponible */
+        height: auto; /* Manteniendo la proporción */
+        border-radius: 8px; /* Bordes redondeados */
+    }
 }
