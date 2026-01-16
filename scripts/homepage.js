@@ -95,6 +95,10 @@ const courses = [
     }
 ];
 
+const creditTotalElement = document.getElementById('creditTotal');
+
+// Función para mostrar los cursos filtrados y el total de créditos
+
 const allCoursesButton = document.querySelector('#all-courses');
 const wddButton = document.querySelector('#wdd');
 const cseButton = document.querySelector('#cse');
@@ -119,6 +123,10 @@ displayCourses(courses);
 function displayCourses(filteredCourses) {
     const courseList = document.getElementById('course-list');
     courseList.innerHTML = '';
+
+    const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+
+    creditTotalElement.innerHTML = `Total credits for course listed above is: ${totalCredits}`;
 
     filteredCourses.forEach(course => {
         const courseElement = document.createElement('div');
