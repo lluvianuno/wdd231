@@ -33,6 +33,8 @@ header span {
     color: #ffffff;
 }
 
+/*------------------NAVIGATION------------------*/
+
 .hamburger {
     background: none;
     border: none;
@@ -82,6 +84,8 @@ header span {
     background-color: #a8a8a8;
 }
 
+/*------------------MAIN CONTENT------------------*/
+
 h1 {
     margin-left: 10px;
     font-family: var(--heading-font);
@@ -120,9 +124,65 @@ section img {
     padding: 1rem;
 }
 
+/*----------WEB CERTIFICATE COURSES----------*/
+/*----BUTTON----*/
+
+.courses button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0 0 10px;
+    font-family: var(--body-font);
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    gap: 10px;
+}
+
+.courses button:hover {
+    background-color: #a8a8a8;
+    color: var(--primary-color);
+}
+
+.courses-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*----COURSE LIST----*/
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem 10px;
+}
+
+.course-list h3 {
+    background-color: var(--primary-color);
+    font-family: var(--body-font);
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completed .course-title::after {
+    content: " ✓";
+    color: #a8a8a8;
+    font-weight: bold;
+}
+
+
 /*------------------FOOTER------------------*/
 
-footer {
+.footer-txt{
     background-color: var(--primary-color);
     color: #ffffff;
     text-align: center;
@@ -135,15 +195,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.icons img {
-    width: 24px;
-    height: 24px;
+    column-gap: 8px;
 }
 
 .icons a {
-    padding: 1rem;
-    gap: 1rem;
-    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+
+.icons img {
+    width: 36px;
+    height: 36px;
+}
+
+.icons a:hover {
+    background-color: var(--secondary-color);
 }
