@@ -32,7 +32,7 @@ const displayMembers = (members) => {
         const name = document.createElement('h2');
         const address = document.createElement('p');
         const phone = document.createElement('p');
-        const email = document.createElement('a');
+        const email = document.createElement('p');
         const website = document.createElement('a');
         const image = document.createElement('img');
         card.classList.add('member-card');
@@ -40,7 +40,6 @@ const displayMembers = (members) => {
         name.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phoneNumber;
-        email.href = `mailto:${member.email}`;
         email.textContent = member.email;
         website.href = member.website;
         website.textContent = 'Visit Website';

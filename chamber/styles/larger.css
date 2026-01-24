@@ -55,4 +55,8 @@
         padding: 50px;
         gap: 1.5rem;
     }
+
+    footer a {
+        padding: 0;
+    }
 }
