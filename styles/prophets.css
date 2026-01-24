@@ -1,0 +1,55 @@
+:root {
+    --heading-font: 'Newsreader', serif;
+    --body-font: 'Tenor Sans', sans-serif;
+    --primary-color: #183f68;
+    --secondary-color: #a9c3de;
+    --tertiary-color: #dfdfdf;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--tertiary-color);
+}
+
+.cards {
+    display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: var(--secondary-color);
+}
+
+section {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section img {
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 

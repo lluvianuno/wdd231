@@ -1,0 +1,28 @@
+{
+    "familyName": "Nuño López",
+    "moveInDate": "2024-09-01",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Lluvia Josephine",
+            "gender": "female",
+            "birthdate": "2008-08-21"
+        },
+        {
+            "name": "Brisa Leilani",
+            "gender": "female",
+            "birthdate": "2011-08-14"
+        },
+        {
+            "name": "María Leonila",
+            "gender": "female",
+            "birthdate": "1976-01-1"
+        },
+        {
+            "name": "Jose Luis",
+            "gender": "male",
+            "birthdate": "1979-02-22"
+        }
+    ]
+}

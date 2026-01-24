@@ -1,0 +1,68 @@
+{
+    "members": [
+        {
+            "name": "Industrias Peñoles",
+            "address": "Calz Cuauhtemoc 1313, Miguel Alemán Valdez, 27230 Torreón, Coah.",
+            "phoneNumber": "+523323341922",
+            "email": "penoles@lineacorrecta.com",
+            "website": "https://www.penoles.com.mx/",
+            "image": "industrias-penoles.jpg",
+            "membershipLevel": 3
+
+        },
+        {
+            "name": "LALA",
+            "address": "Roberto Dávila 50, Cd Industrial, 27019 Torreón, Coah.",
+            "phoneNumber": "+528712293940",
+            "email": "lala800@grupolala.com",
+            "website": "http://www.grupolala.com/ubicacion.php",
+            "image": "industrias-lala.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "CEMEX",
+            "address": "Carr. 30 Km. 3.5 Fracc, Loreto, 25110 Torreón, Coah.",
+            "phoneNumber": "+528002662738",
+            "email": "cemex800@grupocemex.com",
+            "website": "http://www.cemexmexico.com/index.aspx",
+            "image": "cemex-torreon.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Autosistemas de Torreon",
+            "address": "Blvd. Gral. Pedro Verona Rodríguez Triana 2143, Villas la Merced, 27296 Torreón, Coah.",
+            "phoneNumber": "+528717307940",
+            "email": "clientes@atrtorreon.com.mx",
+            "website": "https://www.sws.co.jp/en/corporation/outline/office/detail/autosistemas_de_torreon_sa_de_cvatr.html",
+            "image": "ATR-sumitomo.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Tormex Industrias",
+            "address": "Calle San Pablo, Blvr. Mieleras 100-B, Desarrollo Industrial, 27297 Torreón, Coah.",
+            "phoneNumber": "+528717292205",
+            "email": "info@tormex.com.mx",
+            "website": "http://tormex.com.mx/",
+            "image": "tormex.png",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Industria Sigrama",
+            "address": "Calle C. Juan Escutia 50, Abastos, 27020 Torreón, Coah.",
+            "phoneNumber": "+528717223132",
+            "email": "sigrama@sigrama.com.mx",
+            "website": "http://www.sigrama.com.mx/",
+            "image": "sigrama.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Grupo Versa",
+            "address": "Calle Alfonso Gómez Torrez 170, C. Alfonso Gómez Torres 170, Cd Industrial, 27019 Torreón, Coah.",
+            "phoneNumber": "+528717054000",
+            "email": "contacto@grupoversa.com.mx",
+            "website": "http://www.grupoversa.com/",
+            "image": "grupo-versa.jpg",
+            "membershipLevel": 1
+        }
+    ]
+}
