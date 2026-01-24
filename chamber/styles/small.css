@@ -29,12 +29,8 @@ header img {
 }
 
 h1 {
-    font-size: smaller;
-}
-
-header span {
     font-family: var(--heading-font);
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 /* ---------- HAMBURGER ---------- */
@@ -134,9 +130,8 @@ footer {
 }
 
 .icons {
-    padding: 45px;
+    padding: 35px;
     display: flex;
-    gap: 1rem;
 }
 
 .icons img {
