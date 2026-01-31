@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torreon Chamber of Commerce Directory</title>
-    <meta name="description" content="A directory of businesses and services in Torreón, Coahuila, Mexico. It includes several large industries fron the city.">
+    <meta name="description" content="In this page you will find useful information about diverse bussines from the city of Torreón, Coahuila, Mexico.">
     <meta name="author" content="Lluvia Josephine Nuño López">
 
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,29 +25,68 @@
 </head>
 <body>
     <header>
-        <img class="hero-image" src="images/favicon.ico" alt="home-icon" width="16" height="16">
+        <img src="images/favicon.ico" alt="home-icon" width="16" height="16">
         <h1 class="site-title">Torreon Chamber of Commerce</h1>
         <button id="ham-btn" class="hamburger" aria-label="navigation menu"></button>
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="hero">
+        <img class="hero-image" src="images/hero.jpg" alt="Torreon hero image">
+        <a class="hero-btn" href="#">Keynote Tickets</a>
+    </div>
+
     <main>
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <h2>Home</h2>
+
+        <div id="index-cards" class="home-cards">
+
+            <section id="events" class="card-section">
+                <h3>Events</h3>
+
+                <div class="event">
+                    <h4>Business Networking Night</h4>
+                    <p class="date">March 15, 2026</p>
+                    <p class="location">Torreón Convention Center</p>
+                </div>
+
+                <div class="event">
+                    <h4>Annual Chamber Meeting</h4>
+                    <p class="date">April 2, 2026</p>
+                    <p class="location">Downtown Hall</p>
+                </div>
+            </section>
+
+            <section id="c-weather" class="card-section">
+                <h3>Current Weather</h3>
+                <img id="graphic" src="" alt="">
+                <p id="description"></p>
+                <p id="temperature"></p>
+                <p id="high"></p>
+                <p id="low"></p>
+                <p id="humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+            </section>
+
+            <section id="weather-f" class="card-section">
+                <h3>Weather Forecast</h3>
+                <div id="forecast"></div>
+
+            </section>
         </div>
 
-        <div class="grid" id="cards">
-
+        <div class="member-cards" id="cards">
         </div>
+
 
     </main>
 

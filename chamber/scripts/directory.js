@@ -80,4 +80,3 @@ listButton.addEventListener('click', () => {
   cards.classList.add('list');
   cards.classList.remove('grid');
 });
-

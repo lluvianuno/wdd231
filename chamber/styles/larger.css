@@ -43,6 +43,38 @@
     background-color: var(--secondary-color);
     }
 
+    /*-----HERO-----*/
+    .hero {
+        height: 400px;
+    }
+
+    /*----CARDS-INDEX-----*/
+
+    .home-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .member-cards section img {
+        width: 220px;
+        height: auto;
+    }
+
+    .member-cards section h2,
+    .member-cards section p {
+        margin: 0.25rem 0;
+    }
+
+    .member-cards {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+
     /*----FOOTER---*/
     footer {
         display: flex;

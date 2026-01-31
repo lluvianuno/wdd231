@@ -84,6 +84,94 @@ header img {
     background-color: #a8a8a8;
 }
 
+/*-----------HERO--------------*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px; /* ← altura tipo wireframe */
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 14px;
+    background-color: var(--secondary-color);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: var(--body-font);
+}
+
+/*-------MAIN-----------*/
+
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    font-family: var(--heading-font);
+}
+
+/*----------EVENTS----------*/
+
+.card-section {
+    display: grid;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: var(--body-font);
+}
+
+/*---------CARDS-INDEX---------*/
+/*(Weather, events)*/
+
+.cards-index {
+    display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 2fr 2fr 1fr));
+    padding: 2rem;
+    font-family: var(--body-font);
+}
+
+.cards-index h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 10px;
+}
+
+#description {
+    font-weight: 600;
+}
+
+section {
+    padding: 50px;
+    background-color: #e1e1e1;
+    border: #a8a8a8 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section a {
+    color: black;
+}
+
+section img {
+    max-width: 250px;
+    height: auto;
+}
+
+.member-cards {
+    padding-top: 1rem;
+}
+
 /*-----------CARDS-------------*/
 
 .view-buttons {
