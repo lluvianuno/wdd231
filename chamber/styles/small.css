@@ -221,25 +221,6 @@ section img {
     padding: 10px;
 }
 
-section {
-    padding: 50px;
-    background-color: #e1e1e1;
-    border: #a8a8a8 1px solid;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section a {
-    color: black;
-}
-
-section img {
-    max-width: 250px;
-    height: auto;
-}
-
-
-
-
 
 /* ---------- FOOTER ---------- */
 
