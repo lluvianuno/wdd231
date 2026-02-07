@@ -297,14 +297,75 @@ input[type="submit"]:hover {
 
 /*-----------JOIN CARDS-----------*/
 
-.memerships {
-    display: grid;
-    grid-gap: 0.5rem;
-    padding: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+.membership {
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 
+.memberships {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin-right: 5rem;
+    font-family: var(--body-font);
+}
 
+.membership {
+    border-radius: 1.5rem;
+    box-shadow: #000 0px 4px 8px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.membership h2 {
+    font-family: var(--heading-font);
+    padding: 10px;
+}
+
+.membership button {
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.membership button:hover {
+    background-color: #9cc5a7;
+    box-shadow: #000 0px 2px 2px;
+}
+
+dialog {
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: #000 0px 4px 8px;
+    padding: 2rem;
+    font-family: var(--body-font);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+dialog button:hover {
+    background-color: #9cc5a7;
+    box-shadow: #000 0px 2px 2px;
+}
 
 
 
