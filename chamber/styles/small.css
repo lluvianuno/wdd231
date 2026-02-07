@@ -223,14 +223,6 @@ section img {
 
 /*-----------JOIN PAGE-------------*/
 
-/*--         MAIN         --*/
-.join-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* form más grande */
-    gap: 2rem;
-    align-items: start;
-}
-
 form {
     font-family: var(--body-font);
     background-color: var(--primary-color);
@@ -297,9 +289,9 @@ input[type="submit"]:hover {
 
 /*-----------JOIN CARDS-----------*/
 
-.membership {
-    animation-name: fadeIn;
-    animation-duration: 3s;
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .memberships {
@@ -307,8 +299,11 @@ input[type="submit"]:hover {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
-    margin-right: 5rem;
     font-family: var(--body-font);
+    /*Apply Animation*/
+    animation-name: fade-in;
+    animation-duration: 4s;
+    max-width: 60rem;
 }
 
 .membership {
@@ -367,6 +362,72 @@ dialog button:hover {
     box-shadow: #000 0px 2px 2px;
 }
 
+
+/*-----------THANKYOU PAGE--------*/
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks {
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+}
+
+.thanks h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.thanks p {
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+/*-------SUBMITTED INFO---------*/
+#results {
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+}
+
+#results h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+#results p {
+    font-family: var(--body-font);
+    padding: 2px;
+}
+
+#timestampDisplay {
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    font-family: var(--body-font);
+}
 
 
 /* ---------- FOOTER ---------- */

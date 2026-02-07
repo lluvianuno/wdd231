@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torreon Chamber of Commerce Directory</title>
+    <title>Torreon Chamber of Commerce Directory | Join</title>
     <meta name="description" content="A directory of businesses and services in Torreón, Coahuila, Mexico. It includes several large industries fron the city.">
     <meta name="author" content="Lluvia Josephine Nuño López">
 
@@ -26,7 +26,7 @@
 <body>
     <header>
         <img class="hero-ico" src="images/favicon.ico" alt="home-icon" width="16" height="16">
-        <h1 class="site-title">Torreon Chamber of Commerce | Join</h1>
+        <h1 class="site-title">Torreon Chamber of Commerce</h1>
         <button id="ham-btn" class="hamburger" aria-label="navigation menu"></button>
 
         <nav id="nav-bar" class="navigation">
@@ -50,12 +50,12 @@
             <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Last Name">
 
             <!-- OG TITLE -->
-            <label for="orgTitle">Organizational Title</label>
+            <label for="orgTitle">Organization Title</label>
             <input type="text" id="orgTitle" name="organization-title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Only letters, hyphens, and spaces. Minimum 7 characters." required>
 
             <!-- EMAIL -->
              <label for="email">Email: </label>
-             <input type="email" required name="email" title="email-in" autocomplete="email" placeholder="username@example.com">
+             <input type="email" id="email" required name="email" title="email-in" autocomplete="email" placeholder="username@example.com">
 
             <!-- TEL -->
              <label for="cel">Phone Number: </label>
@@ -83,7 +83,7 @@
              <input type="hidden" name="timestamp" value="" id="timestamp">
 
             <!-- BUTTON -->
-            <input type="submit" value="Join">
+            <input type="submit" value="Join the Chamber">
 
         </form>
 

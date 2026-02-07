@@ -74,6 +74,19 @@
         gap: 1rem;
     }
 
+    /*---- JOIN PAGE ----*/
+
+    /*--         MAIN         --*/
+    .join-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* form más grande */
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .memberships {
+        margin-right: 5rem;
+    }
 
     /*----FOOTER---*/
     footer {
