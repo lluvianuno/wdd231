@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 </head>
 <body>
     <header>
-        <img class="hero-image" src="images/favicon.ico" alt="home-icon" width="16" height="16">
+        <img class="hero-ico" src="images/favicon.ico" alt="home-icon" width="16" height="16">
         <h1 class="site-title">Torreon Chamber of Commerce</h1>
         <button id="ham-btn" class="hamburger" aria-label="navigation menu"></button>
 
@@ -39,15 +39,84 @@
         </nav>
     </header>
 
-    <main>
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+    <main class="join-layout">
+        <form method="get" action="thankyou.html" class="wf1">
+
+            <!-- NAME -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="First Name">
+            </input>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Last Name"></input>
+
+            <!-- OG TITLE -->
+            <label for="orgTitle">Organizational Title</label>
+            <input type="text" id="orgTitle" name="organization-title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Only letters, hyphens, and spaces. Minimum 7 characters." required></input>
+
+            <!-- EMAIL -->
+             <label for="email">Email: </label>
+             <input type="email" required name="email" title="Email" autocomplete="email" placeholder="username@example.com"></input>
+
+            <!-- TEL -->
+             <label for="cel">Phone Number: </label>
+             <input type="tel" id="cel" name="phone" required autocomplete="tel" title="10-digit phone number">
+            
+            <!-- BUSINESS NAME -->
+            <label for="orgName">Business Name</label>
+            <input type="text" id="orgName" name="organization-name" autocomplete="organization" title="Only letters, numbers, hyphens, and spaces. Minimum 3 characters." required></input>
+            
+            <!-- MEMBERSHIP LEVEL -->
+            <label for="product">Membership Level</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Membership Level ...</option>
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+
+            <!-- BUSINESS DESCRIPTION -->
+            <label for="description">Business Description</label>   
+            <textarea id="description" name="description" required title="description"></textarea>
+
+            <!-- TIMESTRAP -->
+             <input type="hidden" name="timestamp" value="" id="timestamp"></input>
+
+            <!-- BUTTON -->
+            <input type="submit" value="Join">
+
+        </form>
+
+        <div id="memberships" class="memberships">
+            <div class="membership">
+                <h2>NP Membership</h2>
+                <p>Non profit organizations, there is no fee.</p>
+                <button id="openButton1">More Information</button>
+            </div>
+
+            <div class="membership">
+                <h2>Bronze Membership</h2>
+                <p>Entry-level membership.</p>
+                <button id="openButton2">More Information</button>
+            </div>
+
+            <div class="membership">
+                <h2>Silver Membership</h2>
+                <p>Perfect for medium-sized entrepises.</p>
+                <button id="openButton3">More Information</button>
+            </div>
+
+            <div class="membership">
+                <h2>Gold Membership</h2>
+                <p>Best for large corporations.</p>
+                <button id="openButton4">More Information</button>
         </div>
 
-        <div class="grid" id="cards">
-
-        </div>
+        <dialog id="dialogBox">
+            <div></div>
+            <button id="closeButton">Close</button>
+        </dialog>
 
     </main>
 

@@ -221,6 +221,92 @@ section img {
     padding: 10px;
 }
 
+/*-----------JOIN PAGE-------------*/
+
+/*--         MAIN         --*/
+.join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* form más grande */
+    gap: 2rem;
+    align-items: start;
+}
+
+form {
+    font-family: var(--body-font);
+    background-color: var(--primary-color);
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"]{
+    padding: 0.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+input[type="textarea"]{
+    padding: 0.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    resize: vertical;
+}
+
+select {
+    padding: 0.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    color: #6b6b6b;
+}
+
+select option {
+    color: #000;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid #c6c6c6; /* el color que quieras */
+  box-shadow: 0 0 0 3px rgb(217, 217, 217);
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: #9cc5a7;
+    box-shadow: #000 0px 2px 2px;
+}
+
+/*-----------JOIN CARDS-----------*/
+
+.memerships {
+    display: grid;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
 
 /* ---------- FOOTER ---------- */
 
