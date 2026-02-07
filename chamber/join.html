@@ -26,7 +26,7 @@
 <body>
     <header>
         <img class="hero-ico" src="images/favicon.ico" alt="home-icon" width="16" height="16">
-        <h1 class="site-title">Torreon Chamber of Commerce</h1>
+        <h1 class="site-title">Torreon Chamber of Commerce | Join</h1>
         <button id="ham-btn" class="hamburger" aria-label="navigation menu"></button>
 
         <nav id="nav-bar" class="navigation">
@@ -45,18 +45,17 @@
             <!-- NAME -->
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="First Name">
-            </input>
 
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Last Name"></input>
+            <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Last Name">
 
             <!-- OG TITLE -->
             <label for="orgTitle">Organizational Title</label>
-            <input type="text" id="orgTitle" name="organization-title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Only letters, hyphens, and spaces. Minimum 7 characters." required></input>
+            <input type="text" id="orgTitle" name="organization-title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Only letters, hyphens, and spaces. Minimum 7 characters." required>
 
             <!-- EMAIL -->
              <label for="email">Email: </label>
-             <input type="email" required name="email" title="Email" autocomplete="email" placeholder="username@example.com"></input>
+             <input type="email" required name="email" title="email-in" autocomplete="email" placeholder="username@example.com">
 
             <!-- TEL -->
              <label for="cel">Phone Number: </label>
@@ -64,7 +63,7 @@
             
             <!-- BUSINESS NAME -->
             <label for="orgName">Business Name</label>
-            <input type="text" id="orgName" name="organization-name" autocomplete="organization" title="Only letters, numbers, hyphens, and spaces. Minimum 3 characters." required></input>
+            <input type="text" id="orgName" name="organization-name" autocomplete="organization" title="Only letters, numbers, hyphens, and spaces. Minimum 3 characters." required>
             
             <!-- MEMBERSHIP LEVEL -->
             <label for="product">Membership Level</label>
@@ -81,7 +80,7 @@
             <textarea id="description" name="description" required title="description"></textarea>
 
             <!-- TIMESTRAP -->
-             <input type="hidden" name="timestamp" value="" id="timestamp"></input>
+             <input type="hidden" name="timestamp" value="" id="timestamp">
 
             <!-- BUTTON -->
             <input type="submit" value="Join">
@@ -111,10 +110,13 @@
                 <h2>Gold Membership</h2>
                 <p>Best for large corporations.</p>
                 <button id="openButton4">More Information</button>
+            </div>
         </div>
 
         <dialog id="dialogBox">
-            <div></div>
+            <div>
+
+            </div>
             <button id="closeButton">Close</button>
         </dialog>
 
