@@ -1,0 +1,73 @@
+    :root {
+      --primary-color: #1F2933; /* Dark Blue-Gray */
+      --secondary-color: #F97316; /* Orange */
+      --neutral-color: #F9FAFB; /* Light Gray */
+      --heading-font: 'Montserrat', sans-serif;
+      --body-font: 'Open Sans', sans-serif;
+    }
+    
+    /* Color Scheme (used exclusively on this document)
+       Primary: #1F2933 (dark blue-gray) – headings, header background
+       Secondary: #F97316 (orange) – accents, links, highlights
+       Neutral: #F9FAFB (light gray) – page background
+    */
+
+    body {
+      margin: 0;
+      font-family: var(--body-font);
+      background-color: #F9FAFB;
+      color: #1F2933;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1F2933;
+      color: #F9FAFB;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    figure {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    h2 {
+        font-family: var(--heading-font);
+      color: #1F2933;
+      border-bottom: 3px solid #F97316;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+
+    .accent {
+      color: #843d0a;
+      font-weight: bold;
+    }
+
+     img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #1F2933;
+        border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1F2933;
+      color: #F9FAFB;
+    }
