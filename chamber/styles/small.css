@@ -152,10 +152,6 @@ h2 {
     font-family: var(--body-font);
 }
 
-#description {
-    font-weight: 600;
-}
-
 section {
     padding: 1.5rem;
     background-color: #ffffff;
@@ -538,14 +534,6 @@ button:hover {
 
 .display-cards {
     display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding: 2rem;
-    box-shadow: #000000b8 0px 4px 8px;
-}
-
-.display-cards {
-    display: grid;
     grid-template-areas:
         "image"
         "name"
@@ -553,6 +541,10 @@ button:hover {
         "description"
         "button";
     gap: 0.5rem;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 2rem;
+    box-shadow: #000000b8 0px 4px 8px;
 }
 
 /* ---------- FOOTER ---------- */
