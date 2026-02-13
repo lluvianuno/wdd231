@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
 
     header {
         background-color: var(--secondary-color);
@@ -86,6 +86,43 @@
 
     .memberships {
         margin-right: 5rem;
+    }
+
+    /*-------DISCOVER PAGE-------*/
+
+
+    .display-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .display-cards section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "name image"
+            "description image"
+            "direction image"
+            "button image";
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .display-cards figure {
+        grid-area: image;
+    }
+
+    .display-cards img {
+        width: 100%;
+        height: 200px;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .display-cards img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 
     /*----FOOTER---*/

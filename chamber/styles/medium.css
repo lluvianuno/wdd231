@@ -1,0 +1,78 @@
+@media (min-width: 641px) {
+    
+    /* ---------- DISCOVER ---------- */
+
+    .display-layout h2{
+        font-family: var(--heading-font);
+        text-align: center;
+        padding: 10px;
+
+        grid-area: name;
+    }
+
+    .display-layout p{
+        font-family: var(--body-font);
+        text-align: center;
+        padding: 1rem;
+        grid-area: description;
+    }
+
+    .display-layout address{
+        font-family: var(--body-font);
+        text-align: center;
+
+        padding: 1rem;
+        grid-area: direction;
+    }
+
+    .display-cards figure {
+        width: 100%;
+    }
+
+
+    .display-cards img {
+        width: 100%;
+        height: 200px;
+        display: block;
+    
+        grid-area: image;
+    }
+
+    .display-cards button {
+        margin: 1rem auto;
+        padding: 1rem;
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--body-font);
+        background-color: var(--accent-color);
+        border: 1px solid #00000063;
+        border-radius: 10px;
+        cursor: pointer;
+        grid-area: button;
+    }
+
+    button:hover {
+        background-color: #9cc5a7;
+        box-shadow: #000 0px 2px 2px;
+    }
+
+    .display-cards {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        padding: 2rem;
+        box-shadow: #000000b8 0px 4px 8px;
+    }
+
+    .display-cards section {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "description"
+            "direction"
+            "button"
+            "image";
+        gap: 0.5rem;
+    }
+}

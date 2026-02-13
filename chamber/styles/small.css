@@ -105,11 +105,21 @@ header img {
     bottom: 20px;
     right: 20px;
     padding: 8px 14px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: #000;
     text-decoration: none;
-    border-radius: 8px;
     font-family: var(--body-font);
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    border: #000 1px solid;
+}
+
+.hero-btn:hover {
+    background-color: #9cc5a7;
+    box-shadow: #000 0px 2px 2px;
 }
 
 /*-------MAIN-----------*/
@@ -117,7 +127,7 @@ header img {
 h2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 2rem;
+    text-align: center;
     font-family: var(--heading-font);
 }
 
@@ -136,16 +146,10 @@ h2 {
 
 .cards-index {
     display: grid;
-	grid-gap: 0.5rem;
-	grid-template-columns: 2fr 2fr 1fr;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr 1fr;
     padding: 2rem;
     font-family: var(--body-font);
-}
-
-.cards-index h2 {
-    font-family: var(--heading-font);
-    text-align: center;
-    padding: 10px;
 }
 
 #description {
@@ -153,10 +157,16 @@ h2 {
 }
 
 section {
-    padding: 50px;
-    background-color: #e1e1e1;
-    border: #a8a8a8 1px solid;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 section a {
@@ -170,6 +180,36 @@ section img {
 
 .member-cards {
     padding-top: 1rem;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+#description {
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#forecast p {
+    margin: 0.3rem 0;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+#graphic {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
 }
 
 /*-----------CARDS-------------*/
@@ -429,6 +469,91 @@ dialog button:hover {
     font-family: var(--body-font);
 }
 
+/* ---------- DISCOVER ---------- */
+
+.visit-message {
+    font-family: var(--body-font);
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.display-layout div h2{
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 10px;
+
+    grid-area: name;
+}
+
+.display-layout p{
+    font-family: var(--body-font);
+    text-align: center;
+    padding: 1rem;
+}
+
+.display-layout address{
+    font-family: var(--body-font);
+    text-align: center;
+    padding: 1rem;
+
+    grid-area: direction;
+}
+
+.display-cards figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+}
+
+
+.display-cards img {
+    border: #ffffff 2px solid;
+    border-radius: 8px;
+    box-shadow: #0000008f 0px 4px 8px;
+
+    grid-area: image;
+}
+
+.display-cards button {
+    margin: 1rem auto;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: var(--body-font);
+    background-color: var(--accent-color);
+    border: 1px solid #00000063;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9cc5a7;
+    box-shadow: #000 0px 2px 2px;
+}
+
+.display-cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 2rem;
+    box-shadow: #000000b8 0px 4px 8px;
+}
+
+.display-cards {
+    display: grid;
+    grid-template-areas:
+        "image"
+        "name"
+        "direction"
+        "description"
+        "button";
+    gap: 0.5rem;
+}
 
 /* ---------- FOOTER ---------- */
 

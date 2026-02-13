@@ -80,3 +80,33 @@ listButton.addEventListener('click', () => {
   cards.classList.add('list');
   cards.classList.remove('grid');
 });
+
+// ---------- VISIT MESSAGE USING LOCALSTORAGE ----------
+
+const visitMessage = document.querySelector('#visit-message');
+
+const lastVisit = localStorage.getItem('lastVisit');
+const currentVisit = Date.now();
+
+if (!lastVisit) {
+    visitMessage.textContent = "Welcome! Let us know if you have any questions.";} else {
+    const timeDifference = currentVisit - Number(lastVisit);
+
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        visitMessage.textContent = "Back so soon! Awesome!";
+    } else if (daysDifference === 1) {
+        visitMessage.textContent = "You last visited 1 day ago.";
+    } else {
+        visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+    }
+
+    closeButton.addEventListener('click', () => {
+        dialogBox.close();
+    });
+
+}
+
+// Store current visit time
+localStorage.setItem('lastVisit', currentVisit);
