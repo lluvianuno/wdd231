@@ -54,7 +54,7 @@ export const interest = {
             address: "5 de Mayo 1102, Primitivo Centro, 27000 Torreón, Coah.",
             addressLink: "https://maps.app.goo.gl/Q1iTqG9xoTVfa6M2A",
             description: "Plaza de Toros is a traditional bullring in Torreón, Coahuila. It is a venue for bullfights and other cultural events.",
-            image: "images/plaza-de-toros.webp",
+            image: "images/toros.webp",
         },
 
         {
