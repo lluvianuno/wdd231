@@ -1,0 +1,643 @@
+:root {
+    --primary-color: #1F2933; /* Dark Blue-Gray */
+    --secondary-color: #F97316; /* Orange */
+    --accent-color: #bababa; /* Light Gray */
+    --hover-color: #bababa35; /* Gray */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #1F2933;
+    color: #F9FAFB;
+    padding: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #F9FAFB 2px solid;
+}
+
+header .logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+header .header-title {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+/* ---------- HAMBURGER ---------- */
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #F9FAFB;
+}
+
+.hamburger::after {
+    content: "\2630";
+}
+
+.hamburger.show::after {
+    content: "\2715";
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    background-color: var(--primary-color);
+    grid-column: 1 / -1; /*Width*/
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation a {
+    font-family: var(--body-font);
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #ffffff;
+}
+
+.navigation li.current {
+    background-color: var(--accent-color);
+}
+
+.navigation li.current a {
+    color: black;
+    text-decoration: dotted underline;
+}
+
+.navigation a:hover {
+    background-color: var(--hover-color);
+}
+
+/*-----------HERO--------------*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px; /* ← altura tipo wireframe */
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hero h2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    /*Apply Animation*/
+    animation-name: fade-in;
+    animation-duration: 4s;
+}
+
+.hero p {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    inset: 0;
+    color: white;
+    font-family: var(--body-font);
+    font-size: 1.25rem;
+    margin-top: 11rem;
+    /*Apply Animation*/
+    animation-name: fade-in;
+    animation-duration: 4s;
+}
+
+.hero-btn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    inset: 0;
+    color: white;
+    font-family: var(--body-font);
+    font-size: 1.25rem;
+    margin-top: 15rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.303);
+    /*Apply Animation*/
+    animation-name: fade-in;
+    animation-duration: 4s;
+}
+
+/* ---------- HOME INFO SECTION ---------- */
+
+.home-info {
+    padding: 3rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card container */
+.info {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* Title */
+.info-title {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Text */
+.info p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Image container */
+.info figure {
+    margin: 0;
+}
+
+/* Image */
+.info img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+/*---DINAMICALLY DISPLAYED CARDS---*/
+/* ---------- OFFER SECTION ---------- */
+
+.offer-title {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* GRID */
+.display-offerings {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+/* CARD */
+.index-card {
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.index-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.index-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Title */
+.index-card h4 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    text-align: center;
+    color: #1F2933;
+    padding: 1rem;
+}
+
+/* Description */
+.index-card p {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+    color: #414141;
+}
+
+/*-----------SCHEDULES-----------*/
+
+.schedule-title {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--primary);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.schedule-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+/*SCHEDULE CARD*/
+.schedule-card {
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.schedule-card:hover {
+    transform: translateY(6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.schedule-card h4 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    text-align: center;
+    color: #1F2933;
+    padding: 1rem;
+}
+
+.schedule-card p {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+    color: #414141;
+    border-top: #41414146 1px solid;
+}
+
+/*-------- COACHES CARDS ----------*/
+
+.offer-title {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* GRID */
+.coaches-display {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+/* CARD */
+.coach-card {
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.coach-card:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+/* Image */
+.coach-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+/* Title */
+.coach-card h4 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+/* Description */
+.coach-card p {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+    color: #414141;
+}
+
+/*-----------JOIN PAGE-------------*/
+
+form {
+    font-family: var(--body-font);
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"]{
+    padding: 0.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+input[type="textarea"]{
+    padding: 0.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    resize: vertical;
+}
+
+select {
+    padding: 0.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    color: #6b6b6b;
+}
+
+select option {
+    color: #000;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid #c6c6c6; /* el color que quieras */
+  box-shadow: 0 0 0 3px rgb(217, 217, 217);
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--hover-color);
+    box-shadow: #000 0px 2px 2px;
+}
+
+/*-----------JOIN CARDS-----------*/
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: var(--body-font);
+    /*Apply Animation*/
+    animation-name: fade-in;
+    animation-duration: 4s;
+    max-width: 60rem;
+}
+
+.team {
+    border-radius: 1.5rem;
+    box-shadow: #000 0px 4px 8px;
+    text-align: center;
+    padding: 3rem;
+}
+
+.team h2 {
+    font-family: var(--heading-font);
+    padding: 10px;
+}
+
+.team button {
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.team button:hover {
+    background-color: var(--hover-color);
+    box-shadow: #000 0px 2px 2px;
+}
+
+dialog {
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: #000 0px 4px 8px;
+    padding: 2rem;
+    font-family: var(--body-font);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+dialog button:hover {
+    background-color: var(--hover-color);
+    box-shadow: #000 0px 2px 2px;
+}
+
+/*-----------THANKYOU PAGE--------*/
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks {
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+}
+
+.thanks h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.thanks p {
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+/*-------SUBMITTED INFO---------*/
+#results {
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+}
+
+#results h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+#results p {
+    font-family: var(--body-font);
+    padding: 2px;
+}
+
+#timestampDisplay {
+    box-shadow: #000 0px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    font-family: var(--body-font);
+}
+
+/*---VISIT MESSAGE DISPLAY---*/
+
+.visit-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 999;
+
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+
+    animation: fadeIn 0.4s ease-in-out;
+    animation: fadeIn 0.4s ease-out;
+}
+
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    font-family: var(--body-font);
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+}
+
+.icons {
+    padding: 35px;
+    display: flex;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 35px;
+    height: auto;
+}

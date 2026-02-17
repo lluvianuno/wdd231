@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More Than Basketball | Home</title>
+    <meta name="description" content="A site plan for a local youth basketball club website, including the site name, purpose, scenarios, color scheme, typography, and wireframes." />
+
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+            <img class="logo" src="images/logo.svg" alt="basketball-logo" width="16" height="16">
+            <h1 class="header-title">Home</h1>
+            <button id="ham-btn" class="hamburger" aria-label="navigation menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="join.html">Join Us</a></li>
+            <li><a href="schedules.html">Schedules</a></li>
+            <li><a href="coaches.html">Coaches</a></li>
+        </ul>
+    </nav>
+    
+    <main class="home-info">
+
+        <div id="visit-message" class="visit-message"></div>
+
+        <div class="hero">
+            <img class="hero-image" src="images/hero.webp" alt="basketball hero image">
+            <h2>More Than Basketball</h2>
+            <p>"I can't accept not trying" <span>- Michael Jordan</span></p>
+            <a class="hero-btn" href="join.html">Join the Club</a>
+        </div>
+
+        <form method="get" action="thankyou.html" class="wf1">
+
+            <!--  PLAYER'S NAME -->
+            <label for="firstName">Player's First Name:</label>
+            <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="First Name">
+
+            <label for="lastName">Player's Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Last Name">
+
+            <!-- AGE -->
+            <label for="age">Player's Age:</label>
+            <select id="age" name="age" required>
+                <option value="" disabled selected>Select age ...</option>
+                <option value="beginner">11-12</option>
+                <option value="intermediate">13-14</option>
+                <option value="advanced">15-16</option>
+                <option value="expert">17-19</option>
+                <option value="older">Older than 19</option>
+            </select>
+
+            <!-- TEAM -->
+            <label for="desiredTeam">Desired Team:</label>
+            <select id="desiredTeam" name="desiredTeam" required>
+                <option value="" disabled selected>Select age ...</option>
+                <option value="beginnerTeam">Beginners Team</option>
+                <option value="intermediateTeam">Intermediate Team</option>
+                <option value="advancedTeam">Advanced Team</option>
+                <option value="expertTeam">Expert Team</option>
+            </select>
+
+            <!-- PARENT'S NAME -->
+            <label for="pFirstName">Parent's First Name:</label>
+            <input type="text" id="pFirstName" name="pFirstName" required autocomplete="given-name" title="First Name">
+
+            <label for="pLastName">Parent's Last Name:</label>
+            <input type="text" id="pLastName" name="pLastName" required autocomplete="family-name" title="Last Name">
+
+            <!-- EMAIL -->
+             <label for="email">Parent's Email: </label>
+             <input type="email" id="email" required name="email" title="email-in" autocomplete="email" placeholder="email@example.com">
+
+            <!-- TEL -->
+             <label for="cel">Parent's Phone Number: </label>
+             <input type="tel" id="cel" name="phone" required autocomplete="tel" title="10-digit phone number">
+
+            <!-- TIMESTRAP -->
+             <input type="hidden" name="timestamp" value="" id="timestamp">
+
+            <!-- BUTTON -->
+            <input type="submit" value="Join the Team">
+
+        </form>
+
+        <div id="teams" class="team">
+            <div class="team">
+                <h2>U11 - Beginners</h2>
+                <p>Beginners team, made up of players aged 11-12 and beginners.</p>
+                <button id="openButton1">More Information</button>
+            </div>
+
+            <div class="team">
+                <h2>U14 - Intermediate</h2>
+                <p>Intermediate team, made up of players aged 13-14 and intermediate level players.</p>
+                <button id="openButton2">More Information</button>
+            </div>
+
+            <div class="team">
+                <h2>U16 - Advanced</h2>
+                <p>Advanced team, made up of players aged 15-16 and advanced level players.</p>
+                <button id="openButton3">More Information</button>
+            </div>
+
+            <div class="team">
+                <h2>U18 - Expert</h2>
+                <p>Advanced team, made up of players aged 17-19 and upper, expert level players.</p>
+                <button id="openButton4">More Information</button>
+            </div>
+        </div>
+
+        <dialog id="dialogBox">
+            <div>
+
+            </div>
+            <button id="closeButton">Close</button>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <div class="left">
+            More Than Basketball<br>
+            Hemisferio, 64346<br>
+            Monterrey, N.L., Mexico<br>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube-icon" width="16" height="16"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="twitter-icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/lluvia-nuño-lópez" target="_blank"><img src="images/linkedin.svg" alt="linkedIn-icon" width="16" height="16"></a>
+        </div>
+
+        <div class="right">
+                WDD231 Class Final Project<br>
+                Lluvia Josephine Nuño López<br>
+                &copy; <span id="currentyear"></span> More Than Basketball<br>
+                <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+    <script src="scripts/join.js"></script>
+    
+</body>
+</html>

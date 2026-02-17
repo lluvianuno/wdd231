@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More Than Basketball | Home</title>
+    <meta name="description" content="A site plan for a local youth basketball club website, including the site name, purpose, scenarios, color scheme, typography, and wireframes." />
+
+  <link rel="stylesheet" href="styles/small.css"/>
+  <link rel="stylesheet" href="styles/large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+            <img class="logo" src="images/logo.svg" alt="basketball-logo" width="16" height="16">
+            <h1 class="header-title">Home</h1>
+            <button id="ham-btn" class="hamburger" aria-label="navigation menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="schedules.html">Schedules</a></li>
+            <li><a href="coaches.html">Coaches</a></li>
+        </ul>
+    </nav>
+    
+    <main class="home-info">
+
+        <div id="visit-message" class="visit-message"></div>
+
+        <div class="hero">
+            <img class="hero-image" src="images/hero.webp" alt="basketball hero image">
+            <h2>More Than Basketball</h2>
+            <p>"I can't accept not trying" <span>- Michael Jordan</span></p>
+            <a class="hero-btn" href="join.html">Join the Club</a>
+        </div>
+
+        <h3 class="info-title">About Us</h3>   
+        <div class="info">
+            <figure>
+                <img src="images/about-us.webp" alt="About Us Image" loading="lazy">
+            </figure>
+            <p>
+                More Than Basketball is a local youth basketball club dedicated to fostering a love for the game
+                while promoting teamwork, discipline, and personal growth. Our mission is to provide a supportive
+                and inclusive environment where young athletes can develop their basketball skills, build lasting
+                friendships, and learn valuable life lessons both on and off the court.
+            </p>
+        </div>
+                
+        <h3 class="info-title">Our Mission</h3>
+        <div class="info">
+            <figure>
+                <img src="images/mission.webp" alt="Our Mission Image" loading="lazy">
+            </figure>
+            <p>
+                At More Than Basketball, our mission is to empower young athletes to reach their full potential
+                through the sport of basketball. We strive to create a positive and nurturing environment that encourages
+                skill development, sportsmanship, and character building. Our goal is to instill a lifelong love for the
+                game while teaching important values such as teamwork, perseverance, and respect.
+            </p>
+        </div>
+
+        <h3 class="offer-title">Our Offerings</h3>
+        <div class="display-offerings" id="display-offerings">  
+        </div>
+    </main>
+
+    <footer>
+        <div class="left">
+            More Than Basketball<br>
+            Hemisferio, 64346<br>
+            Monterrey, N.L., Mexico<br>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube-icon" width="16" height="16"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.svg" alt="twitter-icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/lluvia-nuño-lópez" target="_blank"><img src="images/linkedin.svg" alt="linkedIn-icon" width="16" height="16"></a>
+        </div>
+
+        <div class="right">
+                WDD231 Class Final Project<br>
+                Lluvia Josephine Nuño López<br>
+                &copy; <span id="currentyear"></span> More Than Basketball<br>
+                <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+    <script type="module" src="scripts/index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+    "schedule": [
+        {
+            "id": 1,
+            "team": "U11 - Beginners",
+            "day": "Monday",
+            "time": "16:00",
+            "duration": 60,
+            "coach": "Laura Medina",
+            "court": "Court A"
+        },
+        {
+            "id": 2,
+            "team": "U11 - Beginners",
+            "day": "Wednesday",
+            "time": "16:00",
+            "duration": 60,
+            "coach": "Tyler Hill",
+            "court": "Court A"
+        },
+        {
+            "id": 3,
+            "team": "U14 - Intermediate",
+            "day": "Monday",
+            "time": "17:30",
+            "duration": 90,
+            "coach": "Fabricio Rodrigues",
+            "court": "Court B"
+        },
+        {
+            "id": 4,
+            "team": "U14 - Intermediate",
+            "day": "Thursday",
+            "time": "17:30",
+            "duration": 90,
+            "coach": "Andréia de Carvalho",
+            "court": "Court B"
+        },
+        {
+            "id": 5,
+            "team": "U16 - Advanced",
+            "day": "Tuesday",
+            "time": "18:00",
+            "duration": 120,
+            "coach": "Eliott Fontaine",
+            "court": "Court A"
+        },
+        {
+            "id": 6,
+            "team": "U16 - Advanced",
+            "day": "Friday",
+            "time": "18:00",
+            "duration": 120,
+            "coach": "Ibrahim Black",
+            "court": "Court A"
+        },
+        {
+            "id": 7,
+            "team": "U18 - Expert",
+            "day": "Friday",
+            "time": "10:00",
+            "duration": 120,
+            "coach": "Silvana Ligabue",
+            "court": "Court A"
+        },
+        {
+            "id": 7,
+            "team": "U18 - Expert",
+            "day": "Saturday",
+            "time": "10:00",
+            "duration": 120,
+            "coach": "Jesús Juárez",
+            "court": "Court B"
+        }
+    ]
+}

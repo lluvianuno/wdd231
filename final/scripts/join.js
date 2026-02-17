@@ -1,4 +1,3 @@
-// ---------- FOOTER DATES ----------
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
@@ -6,17 +5,15 @@ const lastModified = new Date(document.lastModified);
 document.getElementById("lastModified").textContent =
   "Last Modification: " + lastModified.toLocaleString();
 
-
-// ---------- HAMBURGER MENU ----------
+//Store the selected elements we are going to use.
 const navbutton = document.querySelector('#ham-btn');
 const navlinks = document.querySelector('#nav-bar');
 
+//Toggle the show class of and on
 navbutton.addEventListener('click', () => {
-  navbutton.classList.toggle('show');
-  navlinks.classList.toggle('show');
+    navbutton.classList.toggle('show');
+    navlinks.classList.toggle('show');
 });
-
-
 
 // ---------- JOIN PAGE FORM DIALOGUES ----------
 const openButton1 = document.querySelector('#openButton1');
@@ -30,22 +27,22 @@ const closeButton = document.querySelector('#closeButton');
 
 if (openButton1 && openButton2 && openButton3 && openButton4 && dialogBox && dialogText && closeButton) {
   openButton1.addEventListener('click', () => {
-      dialogText.innerHTML = "Ideal for small businesses looking to establish a presence in the community. Enjoy basic listing features and access to networking events.";
+      dialogText.innerHTML = "Ideal for begginers who are just starting in this sport. I you are over 12 you will join your corresponding age team when you play better!";
       dialogBox.showModal();
   });
 
   openButton2.addEventListener('click', () => {
-      dialogText.innerHTML = "Perfect for growing businesses that want more visibility and advanced features. Includes premium listing options and priority support.";
+      dialogText.innerHTML = "Ideal for intermediate level players who know some stuff. I you are over 14 you will join your corresponding age team when you play better!";
       dialogBox.showModal();
   });
 
   openButton3.addEventListener('click', () => {
-      dialogText.innerHTML = "Designed for established businesses seeking maximum exposure and exclusive benefits. Gain access to top-tier networking opportunities and advertising options.";
+      dialogText.innerHTML = "Ideal for advanced players who are already familiar with this sport. I you are over 16 you will join your corresponding age team when you play better!";
       dialogBox.showModal();
   });
 
   openButton4.addEventListener('click', () => {
-      dialogText.innerHTML = "Our Corporate Membership is tailored for large enterprises aiming to make a significant impact in the community. Enjoy comprehensive benefits, including multiple listings, event sponsorships, and dedicated account management.";
+      dialogText.innerHTML = "Ideal for advanmced players who know their way arount this sport. I you are over 19 it doesen't matter as long as you are okay with that!";
       dialogBox.showModal();
   });
 
@@ -93,9 +90,9 @@ const lastVisit = localStorage.getItem('lastVisit');
 const currentVisit = Date.now();
 
 if (!lastVisit) {
-    visitMessage.textContent = "Welcome! Let us know if you have any questions.";} else {
+    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+} else {
     const timeDifference = currentVisit - Number(lastVisit);
-
     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
     if (daysDifference < 1) {
@@ -105,12 +102,17 @@ if (!lastVisit) {
     } else {
         visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
     }
+    setTimeout(() => {
+    visitMessage.style.opacity = "0";
+    visitMessage.style.transition = "opacity 0.5s ease";
 
-    closeButton.addEventListener('click', () => {
-        dialogBox.close();
-    });
+    // Opcional: quitarlo completamente del DOM después del fade
+    setTimeout(() => {
+        visitMessage.style.display = "none";
+    }, 500);
+
+}, 4000);
 
 }
 
-// Store current visit time
 localStorage.setItem('lastVisit', currentVisit);

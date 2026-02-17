@@ -1,0 +1,74 @@
+@media (min-width: 789px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navigation ul {
+        list-style-type: none;
+        background-color: var(--primary-color);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .navigation a {
+        border-bottom: 1px var(--primary-color);
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .navigation li {
+        float: left;
+    }
+
+    .info {
+        padding: 4rem 5rem 0 5rem;
+
+    }
+
+    .info h3{
+        padding-top: 1rem;
+        font-family: var(--heading-font);
+        font-size: 1.5rem;
+        text-align: center;
+        color: #F97316;
+    }
+
+    .info p {
+        font-family: var(--body-font);
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .info img {
+        width: 200px;
+        height: 250px;
+        display: flex;
+        margin: auto;
+    }
+
+    .info {
+        border-bottom: #F97316 2px solid;
+        padding-bottom: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .coach-card:hover {
+        transform: translateY(6px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        border-left: #F97316 10px solid;
+        border-bottom: #F97316 10px solid;
+    }
+}
