@@ -326,16 +326,6 @@ header .header-title {
 
 /*-------- COACHES CARDS ----------*/
 
-.offer-title {
-    text-align: center;
-    font-family: var(--heading-font);
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    letter-spacing: 1px;
-}
-
 /* GRID */
 .coaches-display {
     display: grid;
@@ -612,7 +602,6 @@ dialog button:hover {
     font-family: var(--body-font);
     font-size: 0.9rem;
 
-    animation: fadeIn 0.4s ease-in-out;
     animation: fadeIn 0.4s ease-out;
 }
 
