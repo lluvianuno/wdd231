@@ -620,6 +620,14 @@ footer {
     background-color: var(--primary-color);
 }
 
+footer a {
+    font-family: var(--body-font);
+    color: white;
+    text-decoration: dotted underline;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
 .icons {
     padding: 35px;
     display: flex;
