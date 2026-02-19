@@ -56,21 +56,30 @@ if (openButton1 && openButton2 && openButton3 && openButton4 && dialogBox && dia
 //const getString = window.location.search;
 //console.log(getString);
 
-const myInfo = new URLSearchParams(window.location.search);
-//console.log(myInfo);
+function displayFormResults() {
+    try {
+        const myInfo = new URLSearchParams(window.location.search);
+        const results = document.querySelector('#results');
 
-const results = document.querySelector('#results');
-if (results) {
-  results.innerHTML = `
-      <h2>Submitted Information:</h2>
-      <p><strong>Player's Name:</strong> ${myInfo.get('firstName')} ${myInfo.get('lastName')}</p>
-      <p><strong>Organization Player's Age:</strong> ${myInfo.get('age')}</p>
-      <p><strong>Parent's Name:</strong> ${myInfo.get('pFirstName')} ${myInfo.get('pLastName')}</p>
-      <p><strong>Parent's Email:</strong> ${myInfo.get('email')}</p>
-      <p><strong>Telephone:</strong> ${myInfo.get('phone')}</p>
-      <p><strong>Business Choosen Team:</strong> ${myInfo.get('desiredTeam')}</p>
-  `;
+        if (!results) return;
+
+        results.innerHTML = `
+            <h2>Submitted Information:</h2>
+            <p><strong>Player's Name:</strong> ${myInfo.get('firstName')} ${myInfo.get('lastName')}</p>
+            <p><strong>Organization Player's Age:</strong> ${myInfo.get('age')}</p>
+            <p><strong>Parent's Name:</strong> ${myInfo.get('pFirstName')} ${myInfo.get('pLastName')}</p>
+            <p><strong>Parent's Email:</strong> ${myInfo.get('email')}</p>
+            <p><strong>Telephone:</strong> ${myInfo.get('phone')}</p>
+            <p><strong>Business Chosen Team:</strong> ${myInfo.get('desiredTeam')}</p>
+        `;
+
+    } catch (error) {
+        console.error("Error displaying form results:", error);
+    }
 }
+
+displayFormResults();
+
 
 // ------------ TIMESTAMP FORMS ----------
 document.addEventListener("DOMContentLoaded", () => {
@@ -84,35 +93,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ---------- VISIT MESSAGE USING LOCALSTORAGE ----------
 
-const visitMessage = document.querySelector('#visit-message');
+function visitMessage() {
+    try {
+        const visitMessage = document.querySelector('#visit-message');
+        if (!visitMessage) return;
 
-const lastVisit = localStorage.getItem('lastVisit');
-const currentVisit = Date.now();
+        const lastVisit = localStorage.getItem('lastVisit');
+        const currentVisit = Date.now();
 
-if (!lastVisit) {
-    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-} else {
-    const timeDifference = currentVisit - Number(lastVisit);
-    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        if (!lastVisit) {
+            visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+        } else {
+            const timeDifference = currentVisit - Number(lastVisit);
+            const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
-    if (daysDifference < 1) {
-        visitMessage.textContent = "Back so soon! Join us!";
-    } else if (daysDifference === 1) {
-        visitMessage.textContent = "You last visited 1 day ago.";
-    } else {
-        visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+            if (daysDifference < 1) {
+                visitMessage.textContent = "Back so soon! Join us!";
+            } else if (daysDifference === 1) {
+                visitMessage.textContent = "You last visited 1 day ago.";
+            } else {
+                visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+            }
+
+            setTimeout(() => {
+                visitMessage.style.transition = "opacity 0.5s ease";
+                visitMessage.style.opacity = "0";
+            }, 4000);
+        }
+
+        localStorage.setItem('lastVisit', currentVisit);
+
+    } catch (error) {
+        console.error("Error handling visit message:", error);
     }
-    setTimeout(() => {
-    visitMessage.style.opacity = "0";
-    visitMessage.style.transition = "opacity 0.5s ease";
-
-    // Opcional: quitarlo completamente del DOM después del fade
-    setTimeout(() => {
-        visitMessage.style.display = "none";
-    }, 500);
-
-}, 4000);
-
 }
 
-localStorage.setItem('lastVisit', currentVisit);
+visitMessage();

@@ -64,56 +64,56 @@ export const coachesArray = {
         {
             photo: "coach-laura.webp",
             coachName: "Laura Medina",
-            coachAge: "45",
+            coachExp: "12 years of experience",
             aboutCoach: "Coach Laura specializes in offensive development and competitive mindset training. With years of experience leading youth teams, she focuses on discipline, leadership, and building confident playmakers on the court.",
         },
 
         {
             photo: "coach-tyler.webp",
             coachName: "Tyler Hill",
-            coachAge: "39",
+            coachExp: "7 years of experience",
             aboutCoach: "Coach Tyler brings high-energy practices and a strong background in defensive strategy. He is passionate about teaching game awareness, footwork fundamentals, and helping athletes reach their full potential.",
         },
 
         {
             photo: "coach-fabricio.webp",
             coachName: "Fabrício Rodrigues",
-            coachAge: "26",
+            coachExp: "5 years of experience",
             aboutCoach: "Coach Fabrício focuses on technical skill development, especially shooting mechanics and ball handling. His structured training sessions help players improve consistency and confidence in competitive situations.",
         },
 
         {
             photo: "coach-andy.webp",
             coachName: "Andréia de Carvalho",
-            coachAge: "42",
+            coachExp: "16 years of experience",
             aboutCoach: "Coach Andréia emphasizes teamwork and smart decision-making. With experience in international competition, she teaches players how to read the game and perform under pressure.",
         },
 
         {
             photo: "coach-ibrahim.webp",
             coachName: "Ibrahim Black",
-            coachAge: "35",
+            coachExp: "5 years of experience",
             aboutCoach: "Coach Ibrahim is dedicated to strength, conditioning, and defensive intensity. His sessions build resilience, endurance, and the mental toughness needed to succeed at higher levels.",
         },
 
         {
             photo: "coach-elliot.webp",
             coachName: "Elliot Fontaine",
-            coachAge: "37",
+            coachExp: "10 years of experience",
             aboutCoach: "Coach Eliott focuses on player confidence and offensive creativity. He works closely with athletes to refine their shooting form and improve scoring versatility.",
         },
 
         {
             photo: "coach-jesus.webp",
             coachName: "Jesús Juárez",
-            coachAge: "48",
+            coachExp: "13 years of experience",
             aboutCoach: "Coach Jesús is known for his leadership and mentorship. He prioritizes discipline, communication, and building strong team chemistry both on and off the court.",
         },
 
         {
             photo: "coach-silvana.webp",
             coachName: "Silvana Ligabue",
-            coachAge: "46",
+            coachExp: "12 years of experience",
             aboutCoach: "Coach Silvana specializes in tactical development and fast-paced transition play. Her modern training approach prepares athletes for competitive environments and high-level performance.",
         },
     ]

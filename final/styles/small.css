@@ -280,7 +280,7 @@ header .header-title {
     text-align: center;
     font-family: var(--heading-font);
     font-size: 2rem;
-    color: var(--primary);
+    color: var(--primary-color);
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
